@@ -68,7 +68,11 @@ Many of the first members of ChiChiCo identified as queer. This informed the pol
 </body>
 <script>
   $(function() {
-    $("#hovernav").menu();
+    $("#hovernav").menu({
+      select: function (event, ui) { 
+        location.href = ui.item.context.href; 
+      },
+    });
   });
 </script>
 </html>

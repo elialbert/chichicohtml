@@ -65,7 +65,11 @@ And some other games:<br/>
 
 <script>
   $(function() {
-    $("#hovernav").menu();
+    $("#hovernav").menu({
+      select: function (event, ui) { 
+        location.href = ui.item.context.href; 
+      },
+    });
   });
 </script>
 

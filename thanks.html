@@ -51,7 +51,11 @@ We have received your application and we will be contacting you very soon.
 </body>
 <script>
   $(function() {
-    $("#hovernav").menu();
+    $("#hovernav").menu({
+      select: function (event, ui) { 
+        location.href = ui.item.context.href; 
+      },
+    });
   });
 </script>
 

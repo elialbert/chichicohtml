@@ -78,7 +78,11 @@ This Network Gathering will be a space to discuss shared politics and our vision
 </body>
 <script>
   $(function() {
-    $("#hovernav").menu();
+    $("#hovernav").menu({
+      select: function (event, ui) { 
+        location.href = ui.item.context.href; 
+      },
+    });
   });
 </script>
 
