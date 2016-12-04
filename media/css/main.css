@@ -1,3 +1,6 @@
+iframe {
+  padding: 30px;
+}
 body,
     html {
 	    margin:0;
