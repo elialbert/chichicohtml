@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Chicago Childcare Collective</title>
+<link rel="stylesheet" href="media/css/main.css" type="text/css" />
+<link rel="stylesheet" href="media/css/jquery-ui-1.8.18.custom.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+<script src="media/js/jquery-1.7.1.min.js"> </script>
+<script src="media/js/jquery-ui.1.9.m2.min.js"> </script>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header"><a href="/"><img src="media/button3.jpg"></a>
+      <div id="banner">ChiChiCo</div>
+    </div>
+    <div id="main">
+
+<div id="home-content">
+<p>
+The Chicago Childcare Collective (ChiChiCo) is a group of volunteers who support the participation of parents, especially mothers, in racial and economic justice work. The collective matches volunteers with community organizations across the city to have fun with kids while their parents participate in and lead organizing efforts to defend their rights and build a better Chicago.
+</p>
+<p>
+<img class="home_image" src="media/amc1.jpg">
+<img class="home_image" src="media/amc2.jpg">
+</p>
+</div>
+    </div>
+    <div id="sidebar">
+      <ul id="hovernav">
+  <li><a href="/about.html" class="button">About</a></li>
+  <li><a href="/press.html" class="button">Press</a></li>
+  <li><a href="/media.html" class="button">Media</a></li>
+  <li><a href="/links.html" class="button">Other Collectives</a></li>
+  <li><a href="/volunteer.html" class="button">Get Involved!</a></li>
+  <li><a href="/request.html" class="button">Request Childcare!</a></li>
+  <li><a href="/faq.html" class="button">FAQ</a></li>
+  <li><a href="/feedback.html" class="button">Give Feedback</a></li>
+  <li><a href="http://chicagochildcarecollective.wordpress.com/" class="button">Blog</a></li>
+  
+      </ul>
+    </div>
+    <div id="footer">
+      contact us at chichildcareco@gmail.com
+    </div>
+  </div>
+  
+</body>
+
+<script>
+  $(function() {
+    $("#hovernav").menu({
+      select: function (event, ui) { 
+        location.href = ui.item.context.href; 
+      },
+    });
+  });
+</script>
+
+</html>
